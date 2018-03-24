@@ -32,4 +32,6 @@ client.addCommand("refresh", { // Creates a new file if this doesn't exist
   }
 });
 
+client.handleEvents(["messageDelete"]);
+
 client.launch();
