@@ -1,8 +1,8 @@
 const drooM = require("droom.js");
-const client = new drooM(credentials.token, {getAllUsers: true}, {
+const client = new drooM("TOKEN", {getAllUsers: true}, {
   name: "drooMBot",
   owner: "USER_ID",
-  description: "A bot built with the drooM.js framework",
+  description: "The official example of the drooM.js framework",
   prefix: ["<>"],
   helpCommand: true,
   evalCommand: true,
