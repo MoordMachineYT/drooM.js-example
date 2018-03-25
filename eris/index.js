@@ -12,7 +12,7 @@ const client = new drooM(credentials.token, {getAllUsers: true}, {
 });
 
 const path = require("path");
-client.register(path.join(__dirname, "./commands"), path.join(__dirname, "./events"));
+client.register(path.join(__dirname, "../commands/eris"), path.join(__dirname, "../events/eris"));
 
 client.addCommand("ping", { // Creates a new file if this doesn't exist
   aliases: ["peng", "pang", "pung"],
