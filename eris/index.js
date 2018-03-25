@@ -1,7 +1,7 @@
 const drooM = require("droom.js");
 const client = new drooM("TOKEN", {getAllUsers: true}, {
   name: "drooMBot",
-  owner: "USER_ID",
+  owner: ["USER IDS"],
   description: "The official example of the drooM.js framework",
   prefix: ["<>"],
   helpCommand: true,
@@ -32,6 +32,6 @@ client.addCommand("refresh", { // Creates a new file if this doesn't exist
   }
 });
 
-client.handleEvents(["messageDelete"]);
+client.handleEvents(["messageDelete"]); // Creates a new file if this doesn't exist
 
 client.launch();
