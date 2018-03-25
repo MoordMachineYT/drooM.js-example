@@ -25,7 +25,7 @@ client.addCommand("hi", { // This will create a new file if it doesn't exist
 client.addCommand("refresh", { // This will create a new file if it doesn't exist
   aliases: ["reload", "rc", "rf"],
   args: false,
-  permissions: {
+  req: {
     userIDs: client.commandOptions.owner,
     usernames: [], // If these are not defined, they'll be like this by default, excluding the userIDs, they'll be [] as well
     permissions: [],
