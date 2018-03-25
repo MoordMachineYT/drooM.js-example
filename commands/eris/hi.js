@@ -7,7 +7,7 @@ function hi(droom, message, args) {
   embed.setAuthor("name", client.user.username);
   embed.setAuthor("icon_url", client.user.avatarURL);
   embed.setDescription("Nice to see you!");
-  message.channel.createMessage({ embed: embed });
+  droom.send(message.channel.id, { embed: embed });
 }
 
 module.exports.run = hi;
